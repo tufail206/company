@@ -147,7 +147,7 @@ const ContactPage = () => {
       </section>
 
       {/* Contact Information */}
-      <section className="py-16 px-6 lg:px-20 bg-white dark:bg-gray-800">
+      <section className="py-16 px-6 lg:px-20 bg-white dark:bg-gray-800 text-gray-800 dark:text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {contactInfo.map((item: ContactInfoItem, index: number) => (
@@ -169,7 +169,7 @@ const ContactPage = () => {
       </section>
 
       {/* Contact Form and Map */}
-      <section className="py-20 px-6 lg:px-20 bg-gray-50 dark:bg-gray-900">
+      <section className="py-20 px-6 lg:px-20 bg-gray-50 dark:bg-gray-900 text-dark dark:text-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Form */}
@@ -335,14 +335,14 @@ const ContactPage = () => {
       {/* FAQ Section */}
       <section className="py-20 px-6 lg:px-20 bg-white dark:bg-gray-800">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-center mb-12">
+          <h2 className="text-3xl font-bold text-center mb-12 dark:text-primary">
             Frequently Asked Questions
           </h2>
           <div className="space-y-6">
             {faqItems.map((faq: FAQItem, index: number) => (
               <div
                 key={index}
-                className="bg-gray-50 dark:bg-gray-700 rounded-2xl p-6"
+                className="bg-gray-50 dark:bg-gray-700 rounded-2xl p-6 dark:text-white"
               >
                 <h3 className="text-xl font-semibold mb-3">{faq.question}</h3>
                 <p className="text-gray-600 dark:text-gray-300">{faq.answer}</p>
