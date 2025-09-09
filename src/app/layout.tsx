@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { ThemeProvider } from "@/context/ThemeContext";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 // Import Inter properly
 const inter = Inter({
@@ -37,7 +38,11 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <Header />
-          <div className="container my-2 dark:bg-dark mx-auto py-8">{children}</div>
+          <div className="container my-2 dark:bg-gray-900 mx-auto ">
+            {children}
+          </div>
+
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
